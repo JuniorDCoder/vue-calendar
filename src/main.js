@@ -9,12 +9,12 @@ import { loadFonts } from "./plugins/webfontloader";
 
 loadFonts();
 const firebaseConfig = {
-  apiKey: "AIzaSyCTH6TS6kQowO_VSAOrYqkOBaOhq6gVuc0",
-  authDomain: "vue-calendar-2a625.firebaseapp.com",
-  projectId: "vue-calendar-2a625",
-  storageBucket: "vue-calendar-2a625.appspot.com",
-  messagingSenderId: "891944312563",
-  appId: "1:891944312563:web:8e0e6df5e4229755cd2186",
+    apiKey: process.env.VUE_APP_API_KEY,
+    authDomain: process.env.VUE_APP_AUTH_DOMAIN,
+    projectId: process.env.VUE_APP_PROJECT_ID,
+    storageBucket: process.env.VUE_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.VUE_APP_MESSAGING_SENDER_ID,
+    appId: process.env.VUE_APP_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
